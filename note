@@ -1,0 +1,12 @@
+File Streams:
+------------
+
+1. Readable
+2. writable
+
+Duplex Streams:
+--------------
+
+At a time we can write and Readable
+Eg: Tcp
+    websockets

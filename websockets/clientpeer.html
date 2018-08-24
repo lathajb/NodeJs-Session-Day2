@@ -20,10 +20,18 @@
             })
         }
 
+        function SendMessage(){
+            var msg = document.getElementById('texMessage').value;
+            socket.emit('messageFromClientPeer1',msg);
+        }
+
 
     </script>
 </head>
 <body onload="CalledOnload()">
     <h1>Using Websockets</h1>
+
+    <b>Message to be sent :</b> <input type="text" id="texMessage" value="Hello"/>
+    <input type="button" value="Send !" onclick="SendMessage()"></input>
 </body>
 </html>
