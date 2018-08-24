@@ -15,8 +15,8 @@
 
         function CalledOnload(){
             socket = io.connect();
-            socket.on('messageForClientPeer1',(dataFromServer)=>{
-                console.log(dataFromServer);
+            socket.on('messageForClientPeer1',(data)=>{
+                console.log(data);
             })
         }
 

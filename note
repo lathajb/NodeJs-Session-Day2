@@ -1,4 +1,4 @@
-File Streams:
+File Streams:  3542 43
 ------------
 
 1. Readable
@@ -10,3 +10,33 @@ Duplex Streams:
 At a time we can write and Readable
 Eg: Tcp
     websockets
+
+---------------------
+
+Non-blocking - Async
+Blocking - Sync
+
+Unit testing:
+-------------
+
+1. TDD /BDD - Test Driven approach - No need to have application created first.
+2. Application + Tests
+
+Writing Unittestcase requiers two things:
+-----------------------------------------
+
+1. Testing frameworks - Eg : Jasmine - provides Tesing API from javascript perspectives
+        Define/write the TestSuites - collection of testcases/related testcases.
+
+2. Tesing engine - Execution of test cases - - Eg: Karma
+
+
+Steps :
+
+    1. Install karma and Jasmine
+        npm i karma jasmine-core karma-jasmine
+    2. Install karma-cli as globally - gives u karma.exe file 
+    3. Creation of karma config file. - karma.conf.js
+    4. karma init
+    5. karma start
+    
