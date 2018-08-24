@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script>
+    <script>
+
+        $(document).ready(function(){
+
+            $('#btnSubmit').click(function(){
+                var uname = $('#txtUsername').val(); // document.getElementById()
+                var pwd = $('#txtPassword').val();
+
+                $.post('/login',{
+                    username:uname,
+                    password:pwd
+                },function(response){
+                    if(response == 'sucess'){
+                        alert("U logged in !");
+                    }
+                });
+            })
+
+        });
+    </script>
+</head>
+<body>
+    <h1>Using Post to read from data </h1>
+
+    Username : <input type="text"  id="txtUsername"/>
+    Password : <input type="password"  id="txtPassword"/>
+    <input type="button"  id="btnSubmit" class="btn btn-primary" value="Submit"/>
+
+    
+</body>
+</html>
