@@ -39,4 +39,10 @@ Steps :
     3. Creation of karma config file. - karma.conf.js
     4. karma init
     5. karma start
+
+    Karma test case debug : default browser with debug option will open
+
+    click on debug -> inspect the page select base folder under sources tab
+
+    
     
