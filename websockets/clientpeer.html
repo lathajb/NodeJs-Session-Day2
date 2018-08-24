@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="/socket.io/socket.io.js" ></script>
+    <script>
+
+        // create a socket connection
+        // listen on messages emited by server peer
+
+        var socket;
+
+        function CalledOnload(){
+            socket = io.connect();
+            socket.on('messageForClientPeer1',(dataFromServer)=>{
+                console.log(dataFromServer);
+            })
+        }
+
+
+    </script>
+</head>
+<body onload="CalledOnload()">
+    <h1>Using Websockets</h1>
+</body>
+</html>
