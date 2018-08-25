@@ -45,4 +45,12 @@ Steps :
     click on debug -> inspect the page select base folder under sources tab
 
     
-    
+Express : Rapid application developement and abstraction of node
+--------
+
+Its a middleware or framework - working on top of node
+
+1. Routing
+2. Rendering - engine (Handlebar)
+3. session management
+4. Cookies
